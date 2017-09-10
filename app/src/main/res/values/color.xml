@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="transparent">#00000000</color>
+
+    <color name="backcolor">#25AB94</color>
+    <color name="backcolorclick">#1fb69c</color>
+    <color name="buttonbar">#F6F6F6</color>
+    <color name="hinttextcolor">#acb2b1</color>
+    <color name="other_color_pop">#66000000</color>
+    <!--copy-->
+    <!--通用-->
+    <color name="main_text_color">#9D9D9B</color>
+    <color name="hint_text_color">#CCCCCC</color>
+
+    <color name="title_center_tv">#ffffff</color>
+    <color name="title_right_tv">#848689</color>
+    <color name="title_right_press_tv">#f15353</color>
+    <!-- 自定义对话框 -->
+    <color name="custom_dialog_bg">#F7F7F7</color>
+    <color name="custom_dialog_title">#227CD1</color>
+    <color name="custom_dialog_title_divider">#227CD1</color>
+    <color name="custom_dialog_msg">#333333</color>
+    <color name="custom_dialog_btn_pressed">#eeeeee</color>
+    <color name="custom_dialog_btn_not_pressed">#FFFFFF</color>
+    <color name="dialog_divider">#CCCCCC</color>
+
+    <color name="Indigo_colorPrimaryDark">#303f9f</color>
+    <color name="Indigo_colorPrimary">#3f51b5</color>
+    <color name="Indigo_nav_color">#4675FF</color>
+
+    <color name="main_bg">#7D4812</color>
+    <color name="normal_gray">#D2D2D2</color>
+    <color name="drawer_app_full_name_color">#B6A7A0</color>
+
+    <!--learn-->
+    <color name="learn_item_pb">#7e452c</color>
+    <color name="learn_question_have">#887e452c</color>
+    <color name="learn_question_no">#df7e452c</color>
+    <color name="learn_question_error">#55ff0000</color>
+    <color name="learn_question_bg">#5a000000</color>
+
+
+    <!--collection-->
+    <color name="collection_search_hint">#999999</color>
+    <color name="collection_search_bg">#66000000</color>
+    <color name="collection_type_nav_default_tv">#676767</color>
+    <color name="collection_type_nav_select_tv">#7f462d</color>
+    <color name="collection_type_nav_bottom">#7d462c</color>
+    <color name="collection_type_item_bg_tv">#33ffffff</color>
+    <color name="collection_type_search_item">#cccccc</color>
+    <color name="collection_type_audio_switch_default">#888888</color>
+    <color name="collection_type_audio_switch_select">#864a32</color>
+
+    <color name="common_head_pressed">#ffeeeeee</color>
+    <!-- share -->
+    <color name="share_line">#e7e7e7</color>
+    <color name="share_text">#999999</color>
+</resources>

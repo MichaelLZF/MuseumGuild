@@ -1,0 +1,26 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item android:id="@android:id/background">
+
+        <shape>
+            <gradient
+                android:angle="0"
+                android:endColor="@color/white"
+                android:startColor="@color/white" />
+        </shape>
+    </item>
+
+    <item android:id="@android:id/progress">
+
+        <clip>
+
+            <shape>
+                <gradient
+                    android:angle="0"
+                    android:endColor="@color/learn_item_pb"
+                    android:startColor="@color/learn_item_pb" />
+            </shape>
+        </clip>
+    </item>
+
+</layer-list>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="edittexthight">30dp</dimen>
+    <dimen name="title_height">56dp</dimen>
+    <dimen name="title_size">16sp</dimen>
+    <!-- 自定义对话框 -->
+    <dimen name="custom_dialog_title_text_size">16sp</dimen>
+    <dimen name="custom_dialog_msg_text_size">15sp</dimen>
+    <dimen name="custom_dialog_title_divider_height">2dp</dimen>
+    <dimen name="custom_dialog_title_margin">24dp</dimen>
+    <dimen name="custom_dialog_btn_height">48dp</dimen>
+    <dimen name="divider_height">1px</dimen>
+
+    <dimen name="main_icon_size">44dp</dimen>
+
+    <dimen name="setting_item_height">55dp</dimen>
+
+
+    <dimen name="title_margin_hor">10dp</dimen>
+    <dimen name="title_right_text_size">14sp</dimen>
+    <dimen name="big_title_size">18sp</dimen>
+    <dimen name="content_size">14sp</dimen>
+    <dimen name="hint_size">12sp</dimen>
+    <dimen name="collection_type_details_left">10dp</dimen>
+
+    <dimen name="collection_type_details_popwidth">80dp</dimen>
+    <dimen name="collection_type_details_popheight">38dp</dimen>
+</resources>

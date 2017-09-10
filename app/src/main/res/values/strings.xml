@@ -1,0 +1,71 @@
+<resources>
+    <string name="app_name">博物馆云导览</string>
+    <string name="myself">我</string>
+    <string name="home">首页</string>
+    <string name="scan_search">扫码导览</string>
+
+    <string name="chinese">中文</string>
+    <string name="english">English</string>
+    <string name="uyghurtili">ئۇيغۇر تىلى</string>
+    <!--首页-->
+    <string name="introduction">博物馆简介</string>
+    <string name="adult">我是成人</string>
+    <string name="child">我是儿童</string>
+    <string name="changelanguage">更改语种</string>
+    <string name="pay">支付并观看</string>
+    <string name="notify">我已阅读《说明条款》</string>
+    <string name="loginout">注销登录</string>
+    <string name="login_register">注册/登录</string>
+
+    <string name="login">登录</string>
+    <string name="register">注册</string>
+    <string name="loginhint">请输入用户名</string>
+    <string name="loginphone">请输入手机号</string>
+    <string name="loginemail">请输入邮箱</string>
+    <string name="registerhint">请输入密码</string>
+    <string name="verify">获取验证码</string>
+    <string name="verifyhint">请输入验证码</string>
+
+
+    <!--copy 二维码扫描-->
+    <string name="msg_camera_framework_bug">Sorry, the Android camera encountered a problem. You may need to restart the device.</string>
+    <string name="button_ok">OK</string>
+    <string name="viewfinderview_status_text1">将二维码/条码放入取景框内</string>
+    <string name="viewfinderview_status_text2">即可自动扫描</string>
+
+    <string name="share_qq">QQ</string>
+    <string name="share_wx">微信</string>
+    <string name="share_wb">新浪微博</string>
+    <string name="share_friend">朋友圈</string>
+    <string name="share_copy">复制链接</string>
+
+
+    <string name="community_msg_count">个消息</string>
+    <string name="community_self_space">个人空间</string>
+
+    <!-- 自定义对话框 -->
+    <string name="custom_dialog_title">标题</string>
+    <string name="custom_dialog_msg">提示信息</string>
+    <string name="custom_dialog_btn">确定</string>
+
+    <string name="take_photo">拍照</string>
+    <string name="choose_photo">从相册中选取</string>
+
+
+    <string name="collection_type_list_failure">获取收藏类型列表失败</string>
+    <string name="collection_list_failure">获取收藏列表失败</string>
+    <string name="collection_title">藏品</string>
+    <string name="collection_title_type">藏品类</string>
+    <string name="collection_search_hint">请输入要搜索的文物名</string>
+    <string name="collection_type_one">藏品类别一</string>
+    <string name="collection_type_two">藏品类别二</string>
+    <string name="collection_type_three">藏品类别三</string>
+    <string name="collection_type_zanting">展厅</string>
+    <string name="collection_type_niandai">年代</string>
+    <string name="collection_type_wenwutype">质地</string>
+    <string name="collection_all_zhanting">所有展厅</string>
+    <string name="collection_all_niandai">所有年代</string>
+    <string name="collection_all_zhidi">所有质地</string>
+    <!--copy over-->
+
+</resources>

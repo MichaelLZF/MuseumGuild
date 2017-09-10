@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+    <LinearLayout 
+        android:id="@+id/layout_take_photo"
+        android:layout_width="match_parent"
+    	android:layout_height="50dp"
+    	android:orientation="horizontal"
+    	android:gravity="center"
+    	android:background="@drawable/selector_common_head_icon_area">
+        <ImageView
+            android:layout_width="35dp"
+    		android:layout_height="35dp"
+    		android:paddingTop="5dp"
+    		android:paddingBottom="5dp"
+    		android:src="@drawable/ic_take_photo_new"/>
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="@string/take_photo"/>
+    </LinearLayout>
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/dialog_divider"/>
+    <LinearLayout 
+        android:id="@+id/layout_choose_photo"
+        android:background="@drawable/selector_common_head_icon_area"
+        android:layout_width="match_parent"
+    	android:layout_height="50dp"
+    	android:orientation="horizontal"
+    	android:gravity="center">
+        <ImageView
+            android:layout_width="35dp"
+    		android:layout_height="35dp"
+    		android:paddingTop="5dp"
+    		android:paddingBottom="5dp"
+    		android:src="@drawable/ic_choose_photo"/>
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="@string/choose_photo"/>
+    </LinearLayout>
+
+</LinearLayout>
