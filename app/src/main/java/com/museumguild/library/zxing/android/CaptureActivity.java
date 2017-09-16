@@ -16,26 +16,13 @@ import android.widget.ImageButton;
 import android.widget.Toast;
 
 
-import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
 import com.google.zxing.BarcodeFormat;
 import com.google.zxing.DecodeHintType;
 import com.google.zxing.Result;
 import com.museumguild.R;
-import com.museumguild.entity.collection.RespCollection;
-import com.museumguild.http.ResultCallback;
 import com.museumguild.library.zxing.camera.CameraManager;
 import com.museumguild.library.zxing.view.ViewfinderView;
-import com.museumguild.manage.ServerApiManager;
-import com.museumguild.utils.Util;
-import com.museumguild.view.activities.ScanSuccessActivity;
-import com.museumguild.view.collection.CollectionTypeDetailsActivity;
-import com.museumguild.view.fragment.ScanFragment;
-import com.squareup.okhttp.Request;
 
-
-import org.json.JSONException;
-import org.json.JSONObject;
 
 import java.io.IOException;
 import java.util.Collection;
@@ -201,7 +188,7 @@ public final class CaptureActivity extends Activity implements
 			intent.putExtra("codedContent", rawResult.getText());
 			intent.putExtra("codedBitmap", barcode);
 			setResult(RESULT_OK, intent);
-//			intent.setClass(CaptureActivity.this, ScanFragment.class);
+//			intent.setClass(CaptureActivity.this, PayFragment.class);
 //			startActivity(intent);
 			finish();
 		}

@@ -11,7 +11,7 @@ import com.museumguild.R;
 public class ScanSuccessActivity extends Activity{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.scan_success);
+        setContentView(R.layout.main);
 
     }
 }

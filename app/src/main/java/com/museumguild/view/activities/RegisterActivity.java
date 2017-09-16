@@ -8,6 +8,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.museumguild.MainActivity;
 import com.museumguild.R;
 import com.museumguild.http.ResultCallback;
 import com.museumguild.manage.LoginManager;
@@ -15,7 +16,7 @@ import com.museumguild.manage.ServerApiManager;
 import com.museumguild.utils.Log;
 import com.museumguild.utils.PrefenceUtil;
 import com.museumguild.utils.Util;
-import com.museumguild.view.fragment.ScanFragment;
+import com.museumguild.view.fragment.PayFragment;
 import com.squareup.okhttp.Request;
 
 /**
@@ -23,7 +24,7 @@ import com.squareup.okhttp.Request;
  */
 
 public class RegisterActivity extends BaseActivity implements View.OnClickListener{
-    private ScanFragment scanFragment;
+    private PayFragment payFragment;
     private EditText reusername;
     private EditText repassword;
     private EditText passwordconf;
@@ -124,13 +125,13 @@ public class RegisterActivity extends BaseActivity implements View.OnClickListen
 //                            FragmentManager fm = getFragmentManager();
 //                            // 开启Fragment事务
 //                            FragmentTransaction transaction = fm.beginTransaction();
-//                            if (scanFragment == null)
+//                            if (payFragment == null)
 //                            {
-//                                scanFragment = new ScanFragment();
+//                                payFragment = new PayFragment();
 //                            }
-//                            transaction.replace(R.id.id_content, scanFragment);
+//                            transaction.replace(R.id.id_content, payFragment);
 //                            transaction.commit();
-                            RegisterActivity.this.startActivity(new Intent(RegisterActivity.this,BottomActivity.class));
+                            RegisterActivity.this.startActivity(new Intent(RegisterActivity.this,MainActivity.class));
                         }else{
                             Util.toast(Util.parseResultFailMsg(response));
                         }

@@ -16,9 +16,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".view.activities.BottomActivity"
-            android:launchMode="singleTop">
-        </activity>
         <activity android:name=".view.activities.LoginActivity"
             android:launchMode="singleTop">
         </activity>
