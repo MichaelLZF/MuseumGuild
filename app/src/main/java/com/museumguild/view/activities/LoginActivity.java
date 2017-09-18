@@ -9,6 +9,7 @@ import android.widget.EditText;
 
 import com.museumguild.MainActivity;
 import com.museumguild.R;
+import com.museumguild.TestActivity;
 import com.museumguild.http.ResultCallback;
 import com.museumguild.manage.LoginManager;
 import com.museumguild.manage.ServerApiManager;
@@ -77,7 +78,8 @@ public class LoginActivity extends BaseActivity {
                                     PrefenceUtil.write("password", password);
                                     LoginManager.getIns().setUserInfoAndToken(response);
                                     finish();
-                                    LoginActivity.this.startActivity(new Intent(LoginActivity.this, MainActivity.class));
+//                                    LoginActivity.this.startActivity(new Intent(LoginActivity.this, MainActivity.class));
+//                                    LoginActivity.this.startActivity(new Intent(LoginActivity.this, TestActivity.class));
                                 } else {
                                     Util.toast(Util.parseResultFailMsg(response));
                                 }

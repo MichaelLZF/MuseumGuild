@@ -35,7 +35,6 @@ import com.squareup.okhttp.Request;
 public class PersonalFragment extends Fragment implements View.OnClickListener{
     private String mHeadPic;
     private ImageView headpic;
-//    private DrawerLayout mDrawerLayout;
     private Button loginoutButton;
     private TextView loginusername;
     @Override
@@ -83,12 +82,11 @@ public class PersonalFragment extends Fragment implements View.OnClickListener{
     }
 
     @Override
-    public void onCreate(@Nullable Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
+    public void onResume() {
+        super.onResume();
         if (LoginManager.getIns().isLogin()){
             showMyInfo();
         }
-
     }
 
     private void showMyInfo(){
@@ -120,12 +118,4 @@ public class PersonalFragment extends Fragment implements View.OnClickListener{
             }
         });
     }
-//    private void clickDrawer() {
-//        if (mDrawerLayout.isDrawerOpen(GravityCompat.START)) {
-//            mDrawerLayout.closeDrawers();
-//        } else {
-//            mDrawerLayout.openDrawer(GravityCompat.START);
-//        }
-//    }
-
 }

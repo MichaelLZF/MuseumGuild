@@ -73,4 +73,5 @@
         <item name="android:thumb">@drawable/seek_thumb</item>
         <item name="android:thumbOffset">10.0dip</item>
     </style>
+
 </resources>

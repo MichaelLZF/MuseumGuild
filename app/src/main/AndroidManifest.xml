@@ -28,8 +28,8 @@
         <activity android:name=".view.activities.TmpActivity">
         </activity>
         <activity android:name=".view.activities.SettingActivity">
-
         </activity>
+        <activity android:name=".TestActivity"></activity>
     </application>
     <uses-permission android:name="android.permission.WRITE_SETTINGS" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />

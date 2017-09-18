@@ -13,7 +13,8 @@
     <string name="child">我是儿童</string>
     <string name="changelanguage">更改语种</string>
     <string name="pay">支付并观看</string>
-    <string name="notify">我已阅读《说明条款》</string>
+    <string name="notify">我已阅读,并同意</string>
+    <string name="notifyitems">《说明条款》</string>
     <string name="loginout">注销登录</string>
     <string name="login_register">注册/登录</string>
 
@@ -67,5 +68,12 @@
     <string name="collection_all_niandai">所有年代</string>
     <string name="collection_all_zhidi">所有质地</string>
     <!--copy over-->
+
+    <string name="notifydetails">
+        1.XXXXXXXXXXXXXXXXXXXXXX；
+        2.XXXXXXXXXXXXXXXXXXXX；
+        3.XXXXXXXXXXXXXXXXXXXX；
+        4.XXXXXXXXXXXXXXXXXXXX；
+    </string>
 
 </resources>
