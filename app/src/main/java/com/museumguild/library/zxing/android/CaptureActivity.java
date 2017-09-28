@@ -20,8 +20,10 @@ import com.google.zxing.BarcodeFormat;
 import com.google.zxing.DecodeHintType;
 import com.google.zxing.Result;
 import com.museumguild.R;
+import com.museumguild.TestActivity;
 import com.museumguild.library.zxing.camera.CameraManager;
 import com.museumguild.library.zxing.view.ViewfinderView;
+import com.museumguild.view.activities.find.FindCollectionDetailsActivity;
 
 
 import java.io.IOException;
@@ -188,8 +190,8 @@ public final class CaptureActivity extends Activity implements
 			intent.putExtra("codedContent", rawResult.getText());
 			intent.putExtra("codedBitmap", barcode);
 			setResult(RESULT_OK, intent);
-//			intent.setClass(CaptureActivity.this, PayFragment.class);
-//			startActivity(intent);
+			intent.setClass(CaptureActivity.this, FindCollectionDetailsActivity.class);
+			startActivity(intent);
 			finish();
 		}
 

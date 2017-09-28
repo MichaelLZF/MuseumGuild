@@ -74,4 +74,18 @@
         <item name="android:thumbOffset">10.0dip</item>
     </style>
 
+    //地图style
+    <style name="main_float_icon_base_style">
+        <item name="android:layout_width">@dimen/main_icon_size</item>
+        <item name="android:layout_height">@dimen/main_icon_size</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:scaleType">centerInside</item>
+    </style>
+
+    <style name="main_float_icon_style" parent="@style/main_float_icon_base_style">
+        <item name="android:layout_marginTop">6dp</item>
+        <item name="android:layout_marginRight">20dp</item>
+        <item name="android:background">@drawable/shape_main_item_bg</item>
+    </style>
+
 </resources>

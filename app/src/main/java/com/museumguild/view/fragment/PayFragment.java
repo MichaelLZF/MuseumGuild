@@ -24,6 +24,7 @@ import com.museumguild.TestActivity;
 import com.museumguild.library.zxing.android.CaptureActivity;
 import com.museumguild.manage.LoginManager;
 import com.museumguild.utils.Util;
+import com.museumguild.view.activities.PayActivity;
 
 /**
  * Created by hasee on 2017/8/17.
@@ -85,10 +86,11 @@ test = (ImageView)view.findViewById(R.id.testid);
                 });
                 popup.show();
                 break;
-            case R.id.paybutton://支付成功时跳转到扫描二维码页面
+            case R.id.paybutton://支付成功时跳转到扫描二维码页面（先到支付页面）
                 if(payCheck()){
                     Intent intent = new Intent();
-                    intent.setClass(PayFragment.this.getActivity(), CaptureActivity.class);
+//                    intent.setClass(PayFragment.this.getActivity(), CaptureActivity.class);
+                    intent.setClass(PayFragment.this.getActivity(), PayActivity.class);
                     startActivity(intent);
                 }
                 break;

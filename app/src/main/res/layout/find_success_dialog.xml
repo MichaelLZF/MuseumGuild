@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:padding="10dp">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/find_success_title"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:textColor="@android:color/black"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="10dp"
+        android:text="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"/>
+
+    <View style="@style/divider_horizontal"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="250dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/find_success_jianjie"
+            android:textSize="18sp"
+
+            android:textColor="@android:color/black"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10dp"
+            android:text="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"/>
+    </ScrollView>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/find_success_button"
+        android:textSize="18sp"
+        android:text="恭喜解锁"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:background="#7e442d"
+        android:layout_margin="10dp"/>
+
+
+
+</LinearLayout>

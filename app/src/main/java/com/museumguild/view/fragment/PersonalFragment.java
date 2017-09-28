@@ -43,6 +43,8 @@ public class PersonalFragment extends Fragment implements View.OnClickListener{
         loginoutButton = (Button) view.findViewById(R.id.loginout);
         headpic = (ImageView) view.findViewById(R.id.head_pic);
         headpic.setOnClickListener(this);
+        loginusername = (TextView) view.findViewById(R.id.loginusername);
+        loginusername.setOnClickListener(this);
 
         loginoutButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -55,18 +57,6 @@ public class PersonalFragment extends Fragment implements View.OnClickListener{
 
             }
         });
-//        loginRegister.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Intent intent = new Intent();
-//                intent.setClass(PersonalFragment.this.getActivity(), LoginActivity.class);
-//                startActivity(intent);
-//            }
-//        });
-//        listView = (ListView)view.findViewById(R.id.mylistview);
-//        listView.addView();
-        loginusername = (TextView) view.findViewById(R.id.loginusername);
-        loginusername.setOnClickListener(this);
         return view;
     }
 
@@ -84,9 +74,9 @@ public class PersonalFragment extends Fragment implements View.OnClickListener{
     @Override
     public void onResume() {
         super.onResume();
-        if (LoginManager.getIns().isLogin()){
+//        if (LoginManager.getIns().isLogin()){
             showMyInfo();
-        }
+//        }
     }
 
     private void showMyInfo(){
@@ -114,6 +104,15 @@ public class PersonalFragment extends Fragment implements View.OnClickListener{
                                 .build();
                         ImageLoader.getInstance().displayImage(mHeadPic,headpic,options);
                     }
+                } else {
+                    loginusername.setText(R.string.login_register);
+                    mHeadPic = "";
+                    DisplayImageOptions options = new DisplayImageOptions.Builder()
+                            .cacheInMemory(true)
+                            .cacheOnDisk(true)
+                            .displayer(new CircleBitmapDisplayer())
+                            .build();
+                    ImageLoader.getInstance().displayImage(mHeadPic,headpic,options);
                 }
             }
         });

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/root_view"
+    >
+    <!--tools:context="com.museumguild.activities.find.FindCollectionDetailsActivity"-->
+
+    <include layout="@layout/toolbar_normal" />
+
+    <!-- 主布局 -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!--这里是地图区域-->
+        <FrameLayout
+            android:id="@+id/rootLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"></FrameLayout>
+
+        <!--放大缩小-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/shape_main_item_bg"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_zoom_big"
+                style="@style/main_float_icon_base_style"
+                android:layout_marginTop="0dp"
+                android:src="@drawable/ic_zoom_big" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/normal_gray" />
+
+            <ImageView
+                android:id="@+id/iv_zoom_small"
+                style="@style/main_float_icon_base_style"
+                android:layout_below="@id/iv_zoom_big"
+                android:src="@drawable/ic_zoom_small" />
+        </LinearLayout>
+        <!--定位-->
+        <ImageView
+            android:id="@+id/iv_locate"
+            style="@style/main_float_icon_style"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="100dp"
+            android:src="@drawable/ic_locate" />
+
+        <include layout="@layout/custom_progress_layout" />
+    </RelativeLayout>
+
+</LinearLayout>

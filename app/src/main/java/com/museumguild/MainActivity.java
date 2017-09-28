@@ -5,12 +5,15 @@ import android.app.FragmentManager;
 import android.app.FragmentTransaction;
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.CountDownTimer;
 import android.view.View;
 import android.view.Window;
 import android.widget.LinearLayout;
 
 import com.museumguild.manage.LoginManager;
 import com.museumguild.utils.Constant;
+import com.museumguild.utils.Log;
+import com.museumguild.utils.PrefenceUtil;
 import com.museumguild.view.fragment.HomeFragment;
 import com.museumguild.view.fragment.PayFragment;
 import com.museumguild.view.fragment.PersonalFragment;
@@ -20,6 +23,12 @@ import com.museumguild.view.fragment.PersonalFragment;
  */
 
 public class MainActivity extends Activity implements View.OnClickListener{
+    private String username;
+    private String password;
+    private boolean isAutologin;
+    private View content_ly;
+    public final String TAG = getClass().getSimpleName();
+
     private LinearLayout home;
     private LinearLayout scanSearch;
     private LinearLayout personal;
@@ -45,6 +54,7 @@ public class MainActivity extends Activity implements View.OnClickListener{
 
         // 设置默认的Fragment
         setDefaultFragment();
+        initData();
     }
 
     @Override
@@ -115,5 +125,22 @@ public class MainActivity extends Activity implements View.OnClickListener{
         // transaction.addToBackStack();
         // 事务提交
         transaction.commit();
+    }
+    protected void initData() {
+        username = PrefenceUtil.readString("username", LoginManager.DEFAULT_USERNAME);
+        password = PrefenceUtil.readString("password", "1");
+        if(!username.equals(LoginManager.DEFAULT_USERNAME))
+        {
+            Log.m(TAG, "this is auto login...");
+            isAutologin = true;
+        }
+        else
+        {
+            isAutologin = false;
+        }
+        if(isAutologin){
+            Log.m(TAG, "background Login start");
+            LoginManager.getIns().backgroundLogin();
+        }
     }
 }

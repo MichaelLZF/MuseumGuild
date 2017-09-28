@@ -76,4 +76,27 @@
         4.XXXXXXXXXXXXXXXXXXXX；
     </string>
 
+    <!-- ibeacon定位 -->
+    <string name="ble_not_supported">不支持蓝牙</string>
+    <string name="error_bluetooth_not_supported">不支持蓝牙</string>
+    <string name="api_level_is_too_low">对不起，您当前手机系统的版本过低不支持该功能</string>
+    <string name="can_not_find_device">搜索不到信号</string>
+    <string name="wait_for_locate">定位中，请稍等</string>
+
+    <!-- 寻宝-->
+    <string name="find_collection">寻宝</string>
+    <string name="find_tips">寻宝Tips</string>
+    <string name="find_notation">点击未解锁的宝贝，按照提示寻找到宝贝所在的位置即可解锁该宝贝</string>
+    <string name="title_activity_find_collection_details">FindCollectionDetailsActivity</string>
+    <string name="find_failed">抱歉！该宝贝不是要解锁的宝贝</string>
+    <string name="find_function">寻宝方法</string>
+    <string name="find_details">打开蓝牙，然后靠近相应的文物会有提示哦！靠近正确的文物后点击提示即可解锁。</string>
+
+    <string name="map_lsww">历史文物展厅</string>
+    <string name="map_gdfs">古代服饰展厅</string>
+    <string name="map_gdgs">古代干尸展厅</string>
+    <string name="map_mzfq">民族风情展厅</string>
+    <string name="map_shl">书画临展厅</string>
+    <string name="map_wwl">文物临展厅</string>
+
 </resources>

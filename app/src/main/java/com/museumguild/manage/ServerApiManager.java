@@ -194,6 +194,27 @@ public class ServerApiManager {
 				.get(callback);
 	}
 
+	//获取博物馆信息
+	public void getbwg(String bwgid,final ResultCallback<String> callback){
+		String param = Util.assembleUrlSuffix("bwgid",bwgid);
+		String url = Constant.URL_PREFIX +"getbwg"+param;
+		Log.m(TAG,"getbwg start url:"+url);
+		new OkHttpRequest.Builder()
+				.url(url)
+				.get(callback);
+	}
+	//获取语音信息以及附件url
+	public void getlineAll(String bwgid,String line_type,String language,final ResultCallback<String> callback){
+		String param =Util.assembleUrlSuffix("bwgid",bwgid)
+				+Util.assembleUrlSuffix("line_type",line_type)
+				+Util.assembleUrlSuffix("language",language);
+		String url = Constant.URL_PREFIX +"getlineAll" +param;
+		Log.m(TAG,"getlineAll start url:"+url);
+		new OkHttpRequest.Builder()
+				.url(url)
+				.get(callback);
+	}
+
 	//8/21修改 , 藏品类型 修改为 展厅
 	public void getListCollectionType(final ResultCallback<String> callback)
 	{
