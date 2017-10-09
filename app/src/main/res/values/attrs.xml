@@ -27,4 +27,11 @@
         <attr name="border_width" format="dimension" />
         <attr name="border_color" format="color" />
     </declare-styleable>
+
+
+    <declare-styleable name="MyImageView">
+        <attr name="Text" format="reference|string"></attr>
+        <attr name="Src" format="reference|integer"></attr>
+        <!--<attr name="Gravity" format="reference|string"></attr>-->
+    </declare-styleable>
 </resources>
