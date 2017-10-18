@@ -42,6 +42,7 @@
                 android:layout_height="30dp"
                 android:gravity="center_vertical"
                 android:textStyle="bold"
+                android:layout_marginTop="10dp"
                 android:textSize="16dp"
                 android:text="博物馆"/>
             <TextView
@@ -99,14 +100,13 @@
                 android:layout_height="wrap_content"
                 >
 
-                <com.museumguild.view.view.ImageTextView
+                    <com.museumguild.view.view.ImageTextView
                     android:layout_width="100dp"
                     android:layout_height="wrap_content"
                     android:layout_alignParentLeft="true"
                     android:layout_marginLeft="25dp"
                     uview:Text="特展1"
                     uview:Src="@drawable/ic_launcher"
-                    uview:Oriental="Vertical"
                     />
                 <com.museumguild.view.view.ImageTextView
                     android:layout_width="100dp"
@@ -115,7 +115,6 @@
                     android:layout_alignParentRight="true"
                     uview:Text="特展2"
                     uview:Src="@drawable/ic_launcher"
-                    uview:Oriental="Vertical"
                     />
             </RelativeLayout>
 
@@ -144,7 +143,6 @@
                     android:layout_marginLeft="25dp"
                     uview:Text="文创产品1"
                     uview:Src="@drawable/ic_launcher"
-                    uview:Oriental="Vertical"
                     />
                 <com.museumguild.view.view.ImageTextView
                     android:layout_width="100dp"
@@ -153,7 +151,6 @@
                     android:layout_alignParentRight="true"
                     uview:Text="文创产品2"
                     uview:Src="@drawable/ic_launcher"
-                    uview:Oriental="Vertical"
                     />
             </RelativeLayout>
         </LinearLayout>
