@@ -295,7 +295,7 @@ public class FindCollectionDetailsActivity extends BaseActivity implements OnMap
         collection = (Collection)getIntent().getSerializableExtra("collection");
         position = getIntent().getIntExtra("positoin", -1);
         toolbar = (Toolbar) findViewById(R.id.toolbar_normal);
-        toolbar.setNavigationIcon(R.drawable.back);
+        toolbar.setNavigationIcon(R.drawable.selector_capture_back);
         toolbar.setTitle("");
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);

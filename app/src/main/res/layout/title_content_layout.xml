@@ -30,7 +30,7 @@
             android:paddingLeft="15dp">
         <ImageView
             style="@style/both_wrap_content"
-            android:background="@drawable/back" />
+            android:background="@drawable/selector_capture_back" />
         </LinearLayout>
         <TextView
             android:id="@+id/title_left_tv"

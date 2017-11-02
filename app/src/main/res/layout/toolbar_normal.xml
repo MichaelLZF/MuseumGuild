@@ -8,7 +8,6 @@
     android:minHeight="56dp"
     android:fitsSystemWindows="true"
     android:clipToPadding="true">
-    <!--android:background="?attr/colorPrimary"-->
         <TextView
             android:id="@+id/toolbar_title"
             android:layout_centerInParent="true"

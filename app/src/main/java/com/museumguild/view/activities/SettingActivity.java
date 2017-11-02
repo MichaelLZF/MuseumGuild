@@ -72,7 +72,7 @@ public class SettingActivity extends BaseActivity {
     @Override
     protected void initView() {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar_normal);
-        toolbar.setNavigationIcon(R.drawable.back);
+        toolbar.setNavigationIcon(R.drawable.selector_capture_back);
         toolbar.setTitle("");
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
