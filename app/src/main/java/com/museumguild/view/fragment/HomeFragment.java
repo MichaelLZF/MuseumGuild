@@ -3,7 +3,7 @@ package com.museumguild.view.fragment;
 /**
  * Created by hasee on 2017/8/17.
  */
-import android.app.Fragment;
+import android.support.v4.app.Fragment;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.LayoutInflater;
