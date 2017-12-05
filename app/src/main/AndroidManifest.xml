@@ -32,6 +32,7 @@
         <activity android:name=".view.activities.PayActivity"></activity>
         <activity android:name=".TestActivity"></activity>
         <activity android:name=".view.activities.find.FindCollectionDetailsActivity"/>
+        <activity android:name=".arvideo.ARActivity"></activity>
     </application>
     <uses-permission android:name="android.permission.WRITE_SETTINGS" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
