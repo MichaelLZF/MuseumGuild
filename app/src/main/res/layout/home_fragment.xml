@@ -37,14 +37,29 @@
             android:layout_marginLeft="30dp"
             android:layout_marginRight="30dp"
             >
-            <TextView
+            <RelativeLayout
                 android:layout_width="wrap_content"
                 android:layout_height="30dp"
-                android:gravity="center_vertical"
-                android:textStyle="bold"
                 android:layout_marginTop="10dp"
-                android:textSize="16dp"
-                android:text="博物馆"/>
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:gravity="center_vertical"
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    android:text="博物馆"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:gravity="center_vertical"
+                    android:textStyle="bold"
+                    android:layout_alignParentRight="true"
+                    android:textSize="16dp"
+                    android:textColor="@color/hinttextcolor"
+                    android:text="更多>>"/>
+            </RelativeLayout>
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
@@ -81,15 +96,28 @@
                     />
 
             </RelativeLayout>
-
-            <TextView
+            <RelativeLayout
                 android:layout_width="wrap_content"
                 android:layout_height="30dp"
-                android:gravity="center_vertical"
-                android:textStyle="bold"
                 android:layout_marginTop="10dp"
-                android:textSize="16dp"
-                android:text="特展"/>
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:gravity="center_vertical"
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    android:text="特展"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:gravity="center_vertical"
+                    android:textStyle="bold"
+                    android:layout_alignParentRight="true"
+                    android:textSize="16dp"
+                    android:textColor="@color/hinttextcolor"
+                    android:text="更多>>"/>
+            </RelativeLayout>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
@@ -118,14 +146,28 @@
                     />
             </RelativeLayout>
 
-            <TextView
+            <RelativeLayout
                 android:layout_width="wrap_content"
                 android:layout_height="30dp"
-                android:gravity="center_vertical"
-                android:textStyle="bold"
                 android:layout_marginTop="10dp"
-                android:textSize="16dp"
-                android:text="文创产品"/>
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:gravity="center_vertical"
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    android:text="文创产品"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:gravity="center_vertical"
+                    android:textStyle="bold"
+                    android:layout_alignParentRight="true"
+                    android:textSize="16dp"
+                    android:textColor="@color/hinttextcolor"
+                    android:text="更多>>"/>
+            </RelativeLayout>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="1dp"

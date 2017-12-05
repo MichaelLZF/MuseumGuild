@@ -14,7 +14,7 @@
         android:layout_width="fill_parent"
         android:background="#CDCDCD"
         android:orientation="horizontal"
-        android:layout_height="2dp">
+        android:layout_height="3dp">
         <ImageView
             android:id="@+id/cursor_btn"
             android:layout_width="fill_parent"
@@ -25,7 +25,9 @@
         android:id="@+id/bottomlinear"
         android:layout_width="fill_parent"
         android:layout_height="0dp"
-        android:layout_weight="1.5"
+        android:layout_weight="1.4"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="1dp"
         android:orientation="horizontal"
         android:background="#ffffff">
         <LinearLayout
@@ -36,13 +38,14 @@
             android:orientation="vertical">
 
             <ImageView
-                android:id="@+id/home"
+                android:id="@+id/homeimage"
                 android:layout_width="36dp"
                 android:layout_height="36dp"
                 android:layout_gravity="center_horizontal"
                 android:background="@drawable/home_barclick" />
 
             <TextView
+                android:id="@+id/hometext"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
@@ -58,13 +61,14 @@
             android:layout_weight="1"
             android:orientation="vertical">
             <ImageView
-                android:id="@+id/scansearch"
+                android:id="@+id/scanimage"
                 android:layout_width="36dp"
                 android:layout_height="36dp"
                 android:layout_gravity="center_horizontal"
                 android:background="@drawable/scan_barclick"
                 />
             <TextView
+                android:id="@+id/scantext"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
@@ -79,13 +83,14 @@
             android:layout_weight="1"
             android:orientation="vertical">
             <ImageView
-                android:id="@+id/personal"
+                android:id="@+id/personalimage"
                 android:layout_width="36dp"
                 android:layout_height="36dp"
                 android:layout_gravity="center_horizontal"
                 android:background="@drawable/personal_barclick"
                 />
             <TextView
+                android:id="@+id/personaltext"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"

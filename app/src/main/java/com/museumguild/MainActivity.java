@@ -1,10 +1,9 @@
 package com.museumguild;
 
 import android.annotation.TargetApi;
-import android.app.Activity;
+import android.content.res.ColorStateList;
+import android.media.Image;
 import android.support.v4.app.Fragment;
-import android.app.FragmentManager;
-import android.app.FragmentTransaction;
 import android.bluetooth.BluetoothAdapter;
 import android.bluetooth.BluetoothDevice;
 import android.bluetooth.BluetoothManager;
@@ -20,6 +19,7 @@ import android.view.View;
 import android.view.Window;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.museumguild.ibeacon.iBeaconClass.iBeacon;
@@ -52,10 +52,13 @@ public class MainActivity extends FragmentActivity implements View.OnClickListen
     private LinearLayout home;
     private LinearLayout scanSearch;
     private LinearLayout personal;
+    private ImageView homeimage;
+    private TextView hometext;
+    private ImageView scanimage;
+    private TextView scantext;
+    private ImageView personlimage;
+    private TextView personltext;
 
-    private HomeFragment homeFragment;
-    private PayFragment payFragment;
-    private PersonalFragment personalFragment;
 
     //蓝牙定位使用
     private boolean mScanning;
@@ -91,6 +94,14 @@ public class MainActivity extends FragmentActivity implements View.OnClickListen
         home = (LinearLayout) findViewById(R.id.homelayout);
         scanSearch = (LinearLayout) findViewById(R.id.scansearchlayout);
         personal = (LinearLayout) findViewById(R.id.personallayout);
+
+        homeimage = (ImageView)findViewById(R.id.homeimage);
+        hometext = (TextView)findViewById(R.id.hometext);
+        scanimage = (ImageView)findViewById(R.id.scanimage);
+        scantext = (TextView)findViewById(R.id.scantext);
+        personlimage = (ImageView)findViewById(R.id.personalimage);
+        personltext = (TextView)findViewById(R.id.personaltext);
+
         //初始化layout数组
         linArgs = new LinearLayout[]{
                 home,scanSearch,personal
@@ -125,14 +136,6 @@ public class MainActivity extends FragmentActivity implements View.OnClickListen
             if (data != null) {
                 viewPager.setCurrentItem(1);
                 cursorAnim(1);
-//                FragmentManager fm = getFragmentManager();
-//                // 开启Fragment事务
-//                FragmentTransaction transaction = fm.beginTransaction();
-//                if (payFragment == null) {
-//                    payFragment = new PayFragment();
-//                }
-//                transaction.replace(R.id.id_content, payFragment);
-//                transaction.commit();
             }
         }
     }
@@ -140,54 +143,25 @@ public class MainActivity extends FragmentActivity implements View.OnClickListen
     private void setDefaultFragment() {
         viewPager.setCurrentItem(1);
         cursorAnim(1);
-//        FragmentManager fm = getFragmentManager();
-//        FragmentTransaction transaction = fm.beginTransaction();
-//        payFragment = new PayFragment();
-//        transaction.replace(R.id.id_content, payFragment);
-//        transaction.commit();
     }
 
     @Override
     public void onClick(View v) {
-//        FragmentManager fm = getFragmentManager();
-//        // 开启Fragment事务
-//        FragmentTransaction transaction = fm.beginTransaction();
 
         switch (v.getId()) {
             case R.id.homelayout:
                 viewPager.setCurrentItem(0);
                 cursorAnim(0);
-//                if (homeFragment == null) {
-//                    homeFragment = new HomeFragment();
-//                }
-//                transaction.replace(R.id.id_content, homeFragment);
                 break;
             case R.id.scansearchlayout:
                 viewPager.setCurrentItem(1);
                 cursorAnim(1);
-//                if (payFragment == null) {
-//                    payFragment = new PayFragment();
-//                }
-//                transaction.replace(R.id.id_content, payFragment);
                 break;
-//                Intent intent = new Intent();
-//                intent.setClass(MainActivity.this, CaptureActivity.class);
-//                startActivityForResult(intent, Constant.REQUEST_SCAN_CODE);
-//                break;
             case R.id.personallayout:
                 viewPager.setCurrentItem(2);
                 cursorAnim(2);
-//                if(LoginManager.getIns().isLogin()){
-//                if (personalFragment == null) {
-//                    personalFragment = new PersonalFragment();
-//                }
-//                transaction.replace(R.id.id_content, personalFragment);
-////                }
                 break;
         }
-        // transaction.addToBackStack();
-        // 事务提交
-//        transaction.commit();
     }
 
     protected void initData() {
@@ -293,6 +267,8 @@ public class MainActivity extends FragmentActivity implements View.OnClickListen
                     personal.getWidth()
             };
         }
+        resetButtonColor(-1);
+        resetButtonColor(i);
         cursorAnim(i);
     }
 
@@ -315,5 +291,31 @@ public class MainActivity extends FragmentActivity implements View.OnClickListen
         }
         //再加上当前页面的左边距，即为指示器当前应处的位置
         cursor.setX(cursorX+linArgs[curItem].getPaddingLeft());
+    }
+    //重置所有按钮的颜色
+
+    public void resetButtonColor(int i) {
+        if(i == -1){
+            homeimage.setBackgroundResource(R.drawable.home);
+            scanimage.setBackgroundResource(R.drawable.scan_search);
+            personlimage.setBackgroundResource(R.drawable.person_outline);
+            hometext.setTextColor(Color.BLACK);
+            scantext.setTextColor(Color.BLACK);
+            personltext.setTextColor(Color.BLACK);
+        }
+        if(i==0){
+            homeimage.setBackgroundResource(R.drawable.homechoose);
+            hometext.setTextColor(getResources().getColor(R.color.backcolor));
+        }
+        if(i == 1){
+            scanimage.setBackgroundResource(R.drawable.scan_searchchoose);
+            scantext.setTextColor(getResources().getColor(R.color.backcolor));
+        }
+        if(i==2){
+            personlimage.setBackgroundResource(R.drawable.person);
+            personltext.setTextColor(getResources().getColor(R.color.backcolor));
+        }
+
+
     }
 }
